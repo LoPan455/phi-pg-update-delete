@@ -14,9 +14,9 @@ $(document).ready(function(){
           var $newBook = $('<tr>'); // Creating a new row for each book
           $newBook.data('id', currentBook.id);
           $newBook.append('<td><input value="' + currentBook.title + '" class="bookTitle"></td>');
-          $newBook.append('<td>' + currentBook.author + '</td>');
-          $newBook.append('<td>' + currentBook.edition + '</td>');
-          $newBook.append('<td>' + currentBook.publisher + '</td>');
+          $newBook.append('<td><input value="' + currentBook.author + '" class="bookTitle"></td>');
+          $newBook.append('<td><input value="' + currentBook.edition + '" class="bookTitle"></td>');
+          $newBook.append('<td><input value="' + currentBook.publisher + '" class="bookTitle"></td>');
           $newBook.append('<td><button class="deleteButton">Delete</button></td>');
           $newBook.append('<td><button class="saveButton">Save</button></td>');
           $('#bookShelf').prepend($newBook);
